@@ -1,0 +1,35 @@
+<!-- following this tutorial: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Photo Gallery</title>
+
+</head>
+<header>
+<a href="Sarah_30MFF_IndexMENUPAGE.html" class = "headerButton">Menu</a>
+
+	<a href="Sarah_30MFF_IndexHOMEPAGE.html" class = "headerButton">Home</a>
+
+	<div class = "rectangle"><h1 class = "pageTitle">STILLS</h1> </div>
+</header>
+
+<body>
+	<script src="script.js">
+	</script>
+	<!-- different images, same class-->
+	<img class="mySlides" src="media/still1.jpg">
+	<img class="mySlides" src="media/still2.jpg">
+	<img class="mySlides" src="media/still3.jpg">
+	<img class="mySlides" src="media/still4.jpg">
+
+<!-- I'm a bit confused about the class name here-->
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+html {
+/* follow this tutorial for full image bg: https://css-tricks.com/perfect-full-page-background-image/*/
+	background: url(media/background.png) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+	color: white;
+ 	/* choice of a clean sans-serif font that has some character to it*/
+	font-family: 'Rubik', sans-serif;
+
+
+
+}
+
+.logo{
+/* displaying the production studio logo in the center of the home screen*/
+	display: block;
+	margin: auto;
+	width: 254px;
+
+}
+
+.headerButton {
+  /*specific styling for any buttons in the header (e.g: menu and home buttons)*/
+  color: white;
+  padding: 12px;
+  border: 1px solid white;
+  /*making the edges less sharp*/
+  border-radius: 4px;
+  text-align: left;
+  /*removing the default underlining for links*/
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  /*the cursor changes indicating a "button"*/
+  cursor: pointer;
+  /*for the hover effect, duration of that effect*/
+  transition-duration: 0.3s;
+ 
+}
+.headerButton:hover {
+	/*all the changes here are to indicate that you are about to press the button, making it more vibrant*/
+	background-color:  #F1EA1C;
+	color: black;
+	font-style: italic;
+	border: 0px;
+
+}
+
+
+
+.movieTitle{
+	/*styling for the movie title on the home page*/
+	position: relative;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	font-style: italic; 
+	font-size: 60px;
+
+}
+
+
+.rectangle{
+	/*class styling for all rectangles on the left of page titles*/
+	position: block;
+	height: 100px;
+  	width: 50px;
+  	margin-top: 20px;
+  	background-color: #F1EA1C;}
+
+
+.pageTitle{
+/*styling for all non-home page page titles*/
+	position:inline-block;
+	font-size: 90px;
+	font-style: italic;
+	margin-left: 70px;
+	margin-top: 20px
+}
+
+
+.details{
+	/*styling for film details under the title*/
+	position: relative;
+	padding: none;
+	margin-top: 0px;
+	margin-left: 20px;
+	/*font styling to contrast with the film title*/
+	font-style: normal;
+	font-weight: normal;
+}
+.watchNow {
+  /*similar styling to header buttons, but different placement on the screen*/
+  color: white;
+  padding: 12px;
+  margin-left: 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  
+}
+.watchNow:hover {
+
+	background-color:  #F1EA1C;
+	color: black;
+	font-style: italic;
+	border: 0px;
+}
+
+.verticalDivider {
+	/*vertical line for the menu screen to separate menu*/
+    border-left: 6px solid  #F1EA1C;
+    width: 3px;
+    height: 470px;
+    position: relative;
+    float: right;
+    right: 50%;
+    top: 10%;
+}
+
+.menuElement{
+	/*styling for all menu elements*/
+	display: inline-block;
+	position: relative;
+	color:white;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 0px;
+	margin-top:0px;
+	margin-left: 20px;
+	
+	font-size: 70px;
+	/*same hover effect*/
+	cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.menuElement:hover{
+	/*same hover effect*/
+	font-style: italic; 
+ 	color: #F1EA1C;
+ 	font-size: 75px;
+
+}
+
+.filmPosterMenu{
+	/*placement of the film poster on the menu page*/
+	position: relative;
+	width: 400px;
+	right: -1000px;
+	top: -575px;
+	vertical-align: middle;
+}
+
+.filmPosterAbout{
+	/*placement of the film poster on the about page*/
+	position: relative;
+	width: 350px;
+	top: 30%;
+	left:50px;
+	margin-top: 20px
+	
+}
+.information{
+	/*general styling for the whole div, including film title, genre, and description*/
+	position:absolute;
+	top:30%;
+	left:35%;
+	width: 30%;
+}
+
+.titleOnAbout{
+	/*specific styling for title on the about page*/
+	margin-top:0px;
+	font-size: 60px;
+	text-align:left;
+	margin-bottom:5px;
+
+}
+.genre{
+	/*specific styling for genre on the about page*/
+	margin-top:0px;
+	text-align:left;
+	font-size:30px;
+
+}
+
+.movieDescription{
+
+	font-size:20px;
+}
+
+
+
+.column {
+	/*dividing th page into one row and two columns*/
+	/* followed this tutorial: https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+  margin-top:30px;
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.headshot{
+	/* display for both headshots*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:0px;
+  width: 30%;
+  /*rounded angles*/
+  border-radius: 10%;
+}
+
+.bio{
+	/* display for bios*/
+	display: block;
+	margin-top:5px;
+	text-align: center;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	/* width is less than 100% for a boxy/contained effect*/
+	width: 40%;
+}
+.video{
+	display: block;
+	margin-top: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+
+.w3-button{
+	margin-left: auto;
+ 	margin-right: auto;
+
+
+}
+.mySlides {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: none;
+}
+
+
+
+
+
