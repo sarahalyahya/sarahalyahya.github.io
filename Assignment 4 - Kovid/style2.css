@@ -1,0 +1,284 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #F8F8F8;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F07470;
+}
+.profile {
+  overflow: hidden;
+  background-color: #F6BDC0;
+}
+.stories{
+	background-color: #F8F8F8;
+}
+
+.topnav .search-container {
+  position: absolute;
+  left: 40%;
+  top: 0.5%;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 25px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #DC1C13;;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+#title{
+	float: left;
+	margin-left: 2%;
+	margin-top: 0.75%;
+	width: 13%;
+}
+#more{
+	float: right;
+	margin-right: 2%; 
+}
+button{
+  background-color:  #DC1C13;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  margin: 24px 0 20px 25%;
+  position: relative;
+  border: solid white 5px;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+}
+
+img.avatar {
+  position: relative;
+  width: 102%;
+  border-radius: 50%;
+  margin-left: -1%;
+  margin-top: -0.5%;
+
+}
+
+.posts{
+	position: absolute;
+	top: 11%;
+	left: 38%;
+}
+
+.followers{
+	position: absolute;
+	top: 11%;
+	left: 48%;
+}
+
+.following{
+	position: absolute;
+	top: 11%;
+	left: 58%;
+}
+
+.name{
+	position: absolute;
+	top: 17%;
+	left: 39%;
+}
+
+.bio{
+	position: absolute;
+	top: 24%;
+	left: 39%;
+}
+
+.storiesContainer{
+	width: 55%;
+	margin: auto;
+	display: block;
+}
+
+.story{
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	border: solid 2px lightgray;
+	border-radius: 50%;
+	background-color: lightgray;
+	margin: 3% 5% 3% 5%;
+	cursor: pointer;
+	text-align: center;
+	position: relative;	
+}
+
+.thumbnails{
+	width: 100%;
+	height: 100%;
+  	border-radius: 50%;
+  	opacity: 70%;
+}
+
+.allVideos{
+	width: 100%;
+	display: block;
+	margin: auto;
+	border: solid 4px rgb(255,255,255,0.8);
+}
+
+#tag1{
+	position: absolute;
+	top: 48%;
+	left: 19%;
+	width: 23%;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+#tag2{
+	position: absolute;
+	top: 63%;
+	left: 19%;
+	width: 23%;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+#tag3{
+	position: absolute;
+	top: 48%;
+	left: 55%;
+	width: 23%;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+#tag4{
+	position: absolute;
+	top: 64%;
+	left: 55%;
+	width: 23%;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+.videoScreen{
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 40px;
+}
+
+.videoScreenContent{
+	  margin: auto;
+	  width: 85%;
+	  height: 100%;
+	  margin-top: -1%;
+}
+.close {
+	position: absolute;
+	top: 4%;
+	right: 9%;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*zoom animations*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -26px;
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(255,255,255,0.6);
+}
+.next{
+  right: 2.5%;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 2.5%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgb(93,93,93);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Life On Earth</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Top navigation bar -->
+	<div class="topnav">
+		<img id="title" src="white.png">
+	  	<a id="more" href="index.html"> <button >SIGN OUT</button> </a> 
+		<div class="search-container">
+			<form>
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Profile: Picture + BIO -->
+	<div class="profile">
+		<div class="imgcontainer">
+			<img src="avatar.png" alt="Avatar" class="avatar">
+	    </div>
+	    <p class="posts"> 6 stories</p>
+	    <p class="followers"> 0 followers</p>
+	    <p class="following"> 140M following</p>
+	    <h3 class="name"> KOVID with a K </br> @KOVID19</h3>
+	    <p class="bio">  Majoring in Public Health at NYUAD </br> Love #crowded_places</p>
+	</div>
+
+	<!-- Stories/Posts -->
+	<div class="stories">
+		<div class="storiesContainer">
+			<div class="story" onclick="document.getElementById('v1').style.display='block';slideIndex=1;document.getElementById('story1').play()">
+				<img class="thumbnails" src="thumbnails/1.png">
+			</div>
+			<div class="story" onclick="document.getElementById('v2').style.display='block';slideIndex=2;document.getElementById('story2').play()">
+				<img class="thumbnails" src="thumbnails/2.png">
+			</div>
+			<div class="story" onclick="document.getElementById('v3').style.display='block';slideIndex=3;document.getElementById('story3').play()">
+				<img class="thumbnails" src="thumbnails/3.png">
+			</div>
+			<div class="story" onclick="document.getElementById('v4').style.display='block';slideIndex=4;document.getElementById('story4').play()">
+				<img class="thumbnails" src="thumbnails/4.png">
+			</div>
+			<div class="story" onclick="document.getElementById('v5').style.display='block';slideIndex=5;document.getElementById('story5').play()">
+				<img class="thumbnails" src="thumbnails/5.png">
+			</div>
+			<div class="story" onclick="document.getElementById('v6').style.display='block';slideIndex=6;document.getElementById('story6').play()">
+				<img class="thumbnails" src="thumbnails/6.png">
+			</div>
+		</div>
+	</div>
+
+	<!-- Individual video screens for each story -->
+	<div class="videoScreen" id="v1">
+		<a class="next" id="next1" onclick="plusSlides(1);document.getElementById('story1').pause();document.getElementById('story1').currentTime=0;document.getElementById('story2').play()">&#10095;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story1"  onclick="pauseOrPlay('story1')">
+				<source src="stories/1.mp4" type="video/mp4">
+			</video>
+			<span onclick="document.getElementById('v1').style.display='none';document.getElementById('story1').pause();document.getElementById('story1').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div class="videoScreen" id="v2">
+		<a class="prev" onclick="plusSlides(-1);document.getElementById('story1').play();document.getElementById('story2').pause();document.getElementById('story2').currentTime=0">&#10094;</a>
+		<a class="next" id="next2" onclick="plusSlides(1);document.getElementById('story2').pause();document.getElementById('story2').currentTime=0;document.getElementById('story3').play()">&#10095;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story2"  onclick="pauseOrPlay('story2')">
+				<source src="stories/2.mp4" type="video/mp4">
+			</video>
+			 <span onclick="document.getElementById('v2').style.display='none';document.getElementById('story2').pause();document.getElementById('story2').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div class="videoScreen" id="v3">
+		<a class="prev" onclick="plusSlides(-1);document.getElementById('story2').play();document.getElementById('story3').pause();document.getElementById('story3').currentTime=0">&#10094;</a>
+		<a class="next" id="next3" onclick="plusSlides(1);document.getElementById('story3').pause();document.getElementById('story3').currentTime=0;document.getElementById('story4').play()">&#10095;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story3"  onclick="pauseOrPlay('story3')">
+				<source src="stories/3.mp4" type="video/mp4">
+			</video>
+			 <span onclick="document.getElementById('v3').style.display='none';document.getElementById('story3').pause();document.getElementById('story3').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div class="videoScreen" id="v4">
+		<a class="prev" onclick="plusSlides(-1);document.getElementById('story3').play();document.getElementById('story4').pause();document.getElementById('story4').currentTime=0">&#10094;</a>
+		<a class="next" id="next4" onclick="plusSlides(1);document.getElementById('story4').pause();document.getElementById('story4').currentTime=0;document.getElementById('story5').play()">&#10095;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story4"  onclick="pauseOrPlay('story4')">
+				<source src="stories/4.mp4" type="video/mp4">
+			</video>
+			 <span onclick="document.getElementById('v4').style.display='none';document.getElementById('story4').pause();document.getElementById('story4').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div class="videoScreen" id="v5">
+		<a class="prev" onclick="plusSlides(-1);document.getElementById('story4').play();document.getElementById('story5').pause();document.getElementById('story5').currentTime=0">&#10094;</a>
+		<a class="next" id="next5" onclick="plusSlides(1);document.getElementById('story5').pause();document.getElementById('story5').currentTime=0;document.getElementById('story6').play()">&#10095;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story5"  onclick="pauseOrPlay('story5')">
+				<source src="stories/5.mp4" type="video/mp4">
+			</video>
+			 <span onclick="document.getElementById('v5').style.display='none';document.getElementById('story5').pause();document.getElementById('story5').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div class="videoScreen" id="v6">
+		<a class="prev" onclick="plusSlides(-1);document.getElementById('story5').play();document.getElementById('story6').pause();document.getElementById('story6').currentTime=0">&#10094;</a>
+		<div class="videoScreenContent animate">
+			<video class="allVideos" id="story6"  onclick="pauseOrPlay('story6')">
+				<source src="stories/6.mp4" type="video/mp4">
+			</video>
+			<div id="tag1" onclick="ig(56,'https://www.instagram.com/sarah_alyahya/?hl=en')"></div>
+			<div id="tag2" onclick="ig(60,'https://www.instagram.com/ons.taktak/?hl=en')"></div>
+			<div id="tag3" onclick="ig(58,'https://www.instagram.com/ishika_m23/?hl=en')"></div>
+			<div id="tag4" onclick="ig(61,'https://www.instagram.com/ilya.aki/?hl=en')"></div>
+			<span onclick="document.getElementById('v6').style.display='none';document.getElementById('story6').pause();document.getElementById('story6').currentTime=0" class="close">&times;</span>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

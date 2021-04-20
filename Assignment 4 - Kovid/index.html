@@ -1,0 +1,38 @@
+ <!-- The login pop-up is inspired from w3schools -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Life On Earth</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+
+  <button id="logo" onclick="document.getElementById('loginPopUp').style.display='block'"><img src="kovidgram.png"></button>
+
+  <div id="loginPopUp" class="modal">
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('loginPopUp').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="profilepic.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label class="logintext" for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label class="logintext" for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <a href="main.html"><button id="login" type="button">Login</button></a>
+        <label>
+          <input class="logintext" type="checkbox"  name="remember"> Remember me
+        </label>
+        <button type="button" onclick="document.getElementById('loginPopUp').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+
+     
+    </form>
+  </div>
+</body>
+</html>
