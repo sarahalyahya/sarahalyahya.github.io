@@ -1,0 +1,157 @@
+html {
+	background-color: #cfe5cc; 
+ 	/*monospace font choice*/
+	font-family: 'Space Mono', monospace;
+	/*hiding horizontal scrollbar*/
+	overflow:scroll;overflow-y:scroll;overflow-x:hidden;
+
+}
+
+body{
+	height:100%;
+	margin: 0px;
+}
+
+
+/*section appearance, filling the screen*/
+/*using vw and vh to keep the website responsive*/
+section{
+  width: 100vw;
+  padding: 0 0%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+  background-color:#cfe5cc;
+
+  }
+  
+  /*home page, screen 1*/
+#home1{
+	height: 100vh;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 70vw
+
+}
+
+
+/*down arrow on home page*/
+#downArrow{
+
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50px;
+  	/*cursor interaction to make it intuitive*/
+  	cursor: pointer;
+
+}
+
+
+
+/*specific text decoration (underline) for chosen sections*/
+.pages{
+	color:#404040;
+	cursor:pointer;
+	text-decoration:underline;
+	transition-timing-function: ease-in;
+	transition: font-color 5s
+}
+
+/*italicize + color change when hovering*/
+
+.pages:hover{
+	color:#f15a42;
+	font-style: italic;
+}
+
+/*making sure the font is consistent*/
+#hyperlinks{
+	font-family: 'Space Mono', monospace;
+	
+}
+
+
+
+/*second part of home page, consistent styling for all lines*/
+.menuText {
+  margin-left:4vw;
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 4vw;
+  color: black;
+  
+}
+
+/*making sure non-link text parts are not underlined*/
+#assignments {
+	text-decoration:none;
+	font-size:3.5vw;
+	width: auto;
+	
+
+}
+
+/*font family and size consistency*/
+.information{
+	font-family:'Space Mono', monospace;
+	font-size: 1vw;
+}
+
+
+
+/*styling for each title png */
+.pageTitle{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	max-width:100%;
+	height:auto;
+	width:40vw;
+
+}
+
+/*font consistency and alignment*/
+.colTitle{
+	font-family: 'Space Mono', monospace;
+	text-align:left;
+}
+
+
+/*about page avatar, rounded edges and alignment*/
+img.avatar {
+  display: block;
+  position: center;
+  width: 15vw;
+  border-radius: 50%;
+  margin-top:5vh;
+  margin-right: auto;
+  margin-left:auto;
+  
+
+}
+
+/*about page text: font consistency and alignment*/
+.intro{
+	font-family: 'Space Mono', monospace;
+	display:block;
+	margin-right: auto;
+  	margin-left:auto;
+	font-size:1.25vw;
+	width:50%;
+}
+
+/*specific sizing for 30mff title*/
+#mff{
+	width:50vw;
+}
+
+/*styling for images on each project page*/
+.bts{
+	display:block;
+	margin-right: auto;
+  	margin-left:auto;
+
+}
